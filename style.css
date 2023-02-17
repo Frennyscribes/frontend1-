@@ -55,6 +55,17 @@ body{
 
 
 }
+
+section blink{
+    animation: blinker 1.5s linear infinite;
+    color: rgb(238, 227, 72);
+    font-family: sans-serif;
+}
+@keyframes blinker{
+    50%{
+        opacity:0;
+    }
+}
 section{
     width: 100vw;
     height: 100vh;
@@ -75,7 +86,7 @@ section a{
     font-weight: bold;
     font-family: sans-serif ;
 }
-section button{
+.btn1{
     
     display: block;
     width: 300px;
@@ -100,4 +111,40 @@ section button{
 
 main{
     color: white;
+}
+.signup{
+    height: 50%;
+    width: 50%;
+   padding: 10px;
+   margin: 10px 0;
+   border: 0;
+   box-shadow: 0 0 15px 4px rgb(228, 229, 231);
+}
+input{
+    padding: 10px;
+   margin: 10px 0;
+   border: 0;
+}
+
+button .signup{
+    display: block;
+    width: auto;
+    padding: 1em;
+    margin: 10px 0;
+    box-shadow: 0 0 15px 4px;
+    
+}
+
+.images img{
+    width:300x;
+    height:300px;
+}
+.images{
+    float: left;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    
+    
+
 }
